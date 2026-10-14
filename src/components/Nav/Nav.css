@@ -1,3 +1,4 @@
+
 .nav-list {
   display: flex;
   align-items: center;
@@ -5,19 +6,21 @@
 }
 
 .nav-list a {
-  font-weight: 500;
-  transition: 0.25s;
+  color: var(--bg);
+  font-weight: 600;
+  transition: color 0.25s;
 }
 
 .nav-list a:hover {
-  color: var(--primary);
+  color: #E7B9DC;
 }
 
 .incart {
   margin-left: 0.4rem;
 
-  width: 22px;
+  min-width: 22px;
   height: 22px;
+  padding: 0 5px;
 
   display: inline-flex;
   justify-content: center;
@@ -26,8 +29,9 @@
   border-radius: 50%;
 
   background: var(--primary);
-  color: white;
+  color: var(--bg);
 
   font-size: 0.75rem;
   font-weight: bold;
 }
+

@@ -1,6 +1,7 @@
+
 header {
   background: var(--surface);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 3px solid var(--primary);
 
   padding: 1rem 3rem;
 
@@ -17,10 +18,13 @@ header {
 
 .logo-container img {
   width: 45px;
+  height: 45px;
+  object-fit: contain;
 }
 
 .logo-container span {
   font-size: 1.7rem;
-  font-weight: bold;
-  color: var(--text);
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  color: var(--bg);
 }

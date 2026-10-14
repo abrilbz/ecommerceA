@@ -1,21 +1,22 @@
+
 .card {
   width: 20rem;
   display: flex;
   flex-direction: column;
 
   background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 14px;
+  border: 2px solid var(--border);
+  border-radius: 12px;
   overflow: hidden;
 
-  transition: 0.25s;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+  transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
+  box-shadow: 0 5px 14px rgba(27, 49, 0, 0.12);
 }
 
 .card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-5px);
   border-color: var(--primary);
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 22px rgba(141, 63, 125, 0.2);
 }
 
 .card img {
@@ -27,6 +28,7 @@
 .card h3 {
   padding: 1rem 1rem 0.4rem;
   font-size: 1.35rem;
+  line-height: 1.3;
   color: var(--text);
 }
 
@@ -35,23 +37,21 @@
   color: var(--text-secondary);
   line-height: 1.5;
   flex: 1;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .card p:last-of-type {
   padding: 1rem;
-  font-size: 1.35rem;
-  font-weight: 700;
-  color: var(--text);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--primary);
 }
 
 .card button {
   margin: 0 1rem 1rem;
-}
-
-.card p:first-of-type {
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
